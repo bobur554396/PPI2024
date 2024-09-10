@@ -19,14 +19,15 @@ int main(){
     // max value, which can be stored in int data type
     // most left bit will be used for - sign (1 bit) - signed data type
     // rest of the bit (31) will be used for number itself
-    // max value: 2 ^ 31 = 2_147_483_648
-    // int range: [-2_147_483_648 ... 2_147_483_648]
+    // max value: 2 ^ 31 - 1 = 2_147_483_647
+    // int range: [-2_147_483_647 ... 2_147_483_647]
 
     int a = -2;
     char c = 'a'; // 'a' => 97 => binary value => 0..1..0..
 
     cout << sizeof(int) << endl;
     cout << sizeof(long) << endl; // 8 bytes => 8 * 8 = 64 bit/cells
+    cout << sizeof(long long) << endl; // 8 bytes => 8 * 8 = 64 bit/cells
     cout << sizeof(float) << endl; // 4 bytes => 4 * 8 = 32 bit/cells
     cout << sizeof(double) << endl; // 8 bytes => 8 * 8 = 64 bit/cells
     cout << sizeof(char) << endl; // 1 bytes => 1 * 8 = 8 bit/cells
