@@ -1,0 +1,41 @@
+#include <iostream>
+
+
+using namespace std;
+
+int main(){
+
+    /*
+    4
+    1 5 3 2
+    3
+    */
+
+    // - [ ] Linear search of K from given array
+    
+    freopen("input.txt", "r", stdin);
+    
+    // Read data from termoinal section
+    int n, k;
+    cin >> n;
+    int a[n];
+    for(int i = 0; i < n; i++){
+        cin >> a[i];
+    }
+    cin >> k;
+    
+
+    for(int i = 0; i < n; i++){
+        if(a[i] == k){
+            cout << "YES" << endl;
+            return 0;
+        }
+    }
+
+    cout << "NO" << endl;
+
+
+
+
+    return 0;
+}
