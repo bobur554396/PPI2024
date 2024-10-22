@@ -11,7 +11,7 @@ int main(){
     return 0;
 }
 
-// Function defination
+// Function definition
 float square(float n){
     return n * n;
 }
