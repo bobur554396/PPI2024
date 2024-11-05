@@ -5,7 +5,6 @@
 
 using namespace std;
 
-
 void showMap(map<string, float> m){
     map<string, float>::iterator it;
     for(it = m.begin(); it != m.end(); it++){
